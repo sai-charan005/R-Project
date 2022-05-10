@@ -153,9 +153,9 @@ p1<-{corrplot::corrplot(res, type = "upper", order = "hclust",
 ```{r echo=FALSE}
 library(ggplot2)
 ggplot(nba_team_statistics_2, aes(x=FG, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 sg5<-ggplot(nba_team_statistics_2, aes(x=FG, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 ggsave("Figs/Field_goals_vs_Points.png", sg5, width = 720/72, height = 1280/72, dpi = 72)
 ```
 
@@ -165,9 +165,9 @@ It shows the positive correlation between these two varaibles
 
 ```{r echo=FALSE}
 ggplot(nba_team_statistics_2, aes(x=X3P, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 sg5<-ggplot(nba_team_statistics_2, aes(x=X3P, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 ggsave("Figs/3point_field_Goals_vs_Points.png", sg5, width = 720/72, height = 1280/72, dpi = 72)
 ```
 
@@ -177,9 +177,9 @@ It shows the positive correlation between these two varaibles
 
 ```{r echo=FALSE}
 ggplot(nba_team_statistics_2, aes(x= X2P, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 sg5<-ggplot(nba_team_statistics_2, aes(x= X2P, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 ggsave("Figs/2point_field_Goals_vs_Points.png", sg5, width = 720/72, height = 1280/72, dpi = 72)
 ```
 
@@ -189,9 +189,9 @@ It shows the somewhat neutral relationship between the varaibles.
 
 ```{r echo=FALSE}
 ggplot(nba_team_statistics_2, aes(x= FT, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 sg5<-ggplot(nba_team_statistics_2, aes(x= FT, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 ggsave("Figs/Free_Throws_vs_Points.png", sg5, width = 720/72, height = 1280/72, dpi = 72)
 ```
 
@@ -201,9 +201,9 @@ It shows the somewhat neutral relationship between the varaibles. But the Teams 
 
 ```{r echo=FALSE}
 ggplot(nba_team_statistics_2, aes(x= BLK, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 sg5<-ggplot(nba_team_statistics_2, aes(x= BLK, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 ggsave("Figs/Block_vs_Points.png", sg5, width = 720/72, height = 1280/72, dpi = 72)
 ```
 
@@ -213,9 +213,9 @@ It shows the somewhat neutral relationship between the varaibles. But Blocks and
 
 ```{r echo=FALSE}
 ggplot(nba_team_statistics_2, aes(x= STL, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 sg5<-ggplot(nba_team_statistics_2, aes(x= STL, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 ggsave("Figs/Steals_vs_Points.png", sg5, width = 720/72, height = 1280/72, dpi = 72)
 ```
 
@@ -225,9 +225,9 @@ It shows the somewhat neutral relationship between the varaibles.
 
 ```{r echo=FALSE}
 ggplot(nba_team_statistics_2, aes(x= AST, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 sg5<-ggplot(nba_team_statistics_2, aes(x= AST, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 ggsave("Figs/Assists_vs_Points.png", sg5, width = 720/72, height = 1280/72, dpi = 72)
 ```
 
@@ -238,9 +238,9 @@ It shows the somewhat neutral relationship between the variables.
 
 ```{r echo=FALSE}
 ggplot(df, aes(x= Age, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 sg5<-ggplot(df, aes(x= Age, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 ggsave("Figs/Age_vs_Points.png", sg5, width = 720/72, height = 1280/72, dpi = 72)
 ```
 
@@ -250,9 +250,9 @@ The Average age of the player should be between 25 to 27 years old.
 
 ```{r echo=FALSE}
 ggplot(df, aes(x= TOV, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 sg5<-ggplot(df, aes(x= TOV, y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 ggsave("Figs/Turnover_vs_Points.png", sg5, width = 720/72, height = 1280/72, dpi = 72)
 ```
 
@@ -262,9 +262,9 @@ Turnover percentage has no specific relation with the POints.
 
 ```{r echo=FALSE}
 ggplot(df, aes(x= eFG., y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 sg5<-ggplot(df, aes(x= eFG., y=PTS)) +
-  geom_point()
+  geom_point() + theme_classic()
 ggsave("Figs/Effective_Field_Goal_Percentage_vs_Points.png", sg5, width = 720/72, height = 1280/72, dpi = 72)
 ```
 
